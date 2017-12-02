@@ -1,0 +1,19 @@
+Для Configuration : Debug и Release
+1)	Project -> KR Properties -> Configuration Properties -> C/C++ -> General -> Additional Include Directories 
+(«проект»->свойства КR ->свойства конфигурации->C++->общие -> дополнительные каталоги включаемых файлов )
+Дописать  :   С :\SFML-2.4.2\include
+
+2)	Project -> KR Properties -> Configuration Properties -> C/C++ -> Preprocessor -> Preprocessor Definitions 
+(«проект»->свойства КR ->свойства конфигурации->C++->препроцессор -> определение препроцессора)
+Дописать  :  SFML_DYNAMIC;
+3)	Project -> KR Properties -> Configuration Properties -> Linker ->  General -> Additional Library Directories 
+(«проект»->свойства КR ->свойства конфигурации->компоновщик->общие ->дополнительные каталоги библиотек)
+Дописать  :     C:\SFML-2.4.2\lib
+
+4)	Project -> KR Properties -> Configuration Properties -> Linker ->  Input -> Additional Dependencies 
+(«проект»->свойства КR ->свойства конфигурации->компоновщик->ввод ->дополнительные зависимости)
+Дописать:
+ - для Debug   sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;
+ - для Release  sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;
+
+
